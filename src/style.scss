@@ -46,6 +46,9 @@ header {
           }
         }
       }
+      button{
+        display: none;
+      }
     }
   }
   .hero {
@@ -465,5 +468,117 @@ footer {
         }
       }
     }
+  }
+}
+
+@media(max-width: 375px){
+  header {
+    .home-abs {
+      display: none;
+    }
+    nav {
+      padding: 32px 0px;
+      .container {
+        justify-content: space-between;
+        >a{
+          width: 77px;
+        }
+        ul {
+          display: none;
+        }
+        button{
+          display: block;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+        }
+      }
+    }
+    .hero {
+      background-image: url(../imgs/hero.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 113px 32px;
+      .container {
+        background-image: none;
+        padding: 0;
+        div:nth-child(1) {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          row-gap: 83px;
+          div {
+            h1 {
+              font-weight: 700;
+              font-size: 48px;
+              line-height: 48px;
+              letter-spacing: -1.2px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .welcome {
+    padding: 127px 0px;
+    .container {
+      h1 {
+        display: none;
+      }
+      div {
+        display: flex;
+        align-items: end;
+        column-gap: 125px;
+        div {
+          row-gap: 22px;
+          h2 {
+            font-size: 48px;
+            line-height: 52px;
+            letter-spacing: -1.7px
+          }
+        }
+      }
+    }
+  }
+  .small-team {
+    background-image: url(../imgs/small-team.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 180px 32px;
+    .container {
+      background-image: none;
+      padding: 0;
+      row-gap: 23px;
+      h2 {
+        font-size: 48px;
+        line-height: 52px;
+        letter-spacing: -1.7px;
+      }
+    }
+  }
+  .feature {
+    padding: 75px 0px;
+    .container {
+      row-gap: 43px;
+      div:nth-child(1) {
+        h2 {
+          font-size: 48px;
+          line-height: 52px;
+          letter-spacing: -1.7px;
+        }
+        button {
+          display: none;
+        }
+      }
+      div:nth-child(2) {
+        div {
+          padding: 153px 87px 24px 24px;
+          row-gap: 0px;
+        }
+      }
+    }
+  }
+  footer {
+    display: none;
   }
 }

@@ -15,4 +15,9 @@
   .container {
     max-width: 573px;
   }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 311px;
+  }
 }/*# sourceMappingURL=main.css.map */
